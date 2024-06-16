@@ -18,6 +18,10 @@ def format_terraform_output(actions):
     return actions_to_return
 
 
+def contains_space_or_bracket(s):
+    return ' ' in s or '[' in s
+
+
 def generate_terraform_file(service_actions):
     with open('outputs.tf', 'w') as file:
         file.write('output "effects" {\n')
@@ -33,7 +37,8 @@ def generate_terraform_file(service_actions):
         for service, actions in service_actions.items():
             file.write(f'    {service} = {{\n')
             for action_name, full_action in actions.items():
-                file.write(f'      {action_name} = "{full_action}"\n')
+                escaped_action_name = f'"{action_name}"' if contains_space_or_bracket(action_name) else action_name
+                file.write(f'      {escaped_action_name} = "{full_action}"\n')
             file.write('    }\n')
         file.write('  }\n')
         file.write('}\n')
