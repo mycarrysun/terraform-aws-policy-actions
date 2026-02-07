@@ -9,9 +9,11 @@ practice in most programming languages, in favor of using string constants.
 This module enables you to use string constants for all AWS policy actions.
 
 ## How its generated
-The credit goes to https://www.awsiamactions.io/ for generating the actions
-json file. That file is parsed with python and produces a terraform output
-with this format:
+The actions list is sourced from [TryTryAgain/aws-iam-actions-list](https://github.com/TryTryAgain/aws-iam-actions-list) which maintains an up-to-date list of all AWS IAM actions.
+
+A GitHub Action runs daily to check for updates and automatically creates a PR when new actions are available.
+
+The JSON file is parsed with Python and produces a Terraform output with this format:
 
 ```terraform
 output "effects" {

@@ -1,0 +1,94 @@
+name: Update AWS IAM Actions
+
+on:
+  schedule:
+    # Run daily at 3am UTC
+    - cron: '0 3 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  update-actions:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
+          fetch-depth: 0  # Need full history for tags
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Download latest actions list
+        run: |
+          curl -s "https://raw.githubusercontent.com/TryTryAgain/aws-iam-actions-list/master/all-actions.txt" -o all-actions.txt
+          
+          # Convert to JSON array format
+          python3 -c "
+          import json
+          with open('all-actions.txt', 'r') as f:
+              actions = [line.strip() for line in f if line.strip()]
+          with open('aws-iam-actions.json', 'w') as f:
+              json.dump(actions, f, indent=2)
+          "
+          rm all-actions.txt
+      
+      - name: Generate Terraform file
+        run: python3 generate_aws_policy_files.py
+      
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit, tag, and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          
+          # Get latest tag and bump patch version
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          echo "Latest tag: $LATEST_TAG"
+          
+          # Parse version (remove 'v' prefix if present)
+          VERSION=${LATEST_TAG#v}
+          MAJOR=$(echo $VERSION | cut -d. -f1)
+          MINOR=$(echo $VERSION | cut -d. -f2)
+          PATCH=$(echo $VERSION | cut -d. -f3)
+          
+          # Bump patch
+          NEW_PATCH=$((PATCH + 1))
+          NEW_TAG="v${MAJOR}.${MINOR}.${NEW_PATCH}"
+          echo "New tag: $NEW_TAG"
+          
+          # Commit and push
+          git commit -m "chore: update AWS IAM actions [automated]"
+          git push
+          
+          # Create and push tag
+          git tag -a "$NEW_TAG" -m "Automated update of AWS IAM actions"
+          git push origin "$NEW_TAG"
+          
+          echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
+        id: push
+      
+      - name: Create GitHub Release
+        if: steps.changes.outputs.changed == 'true'
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.push.outputs.new_tag }}
+          name: ${{ steps.push.outputs.new_tag }}
+          body: |
+            Automated update of AWS IAM actions.
+            
+            Source: [TryTryAgain/aws-iam-actions-list](https://github.com/TryTryAgain/aws-iam-actions-list)
+          generate_release_notes: false
