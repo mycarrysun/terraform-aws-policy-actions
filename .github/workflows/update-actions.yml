@@ -6,6 +6,9 @@ on:
     - cron: '0 3 * * *'
   workflow_dispatch: # Allow manual trigger
 
+permissions:
+  contents: write
+
 jobs:
   update-actions:
     runs-on: ubuntu-latest
@@ -51,12 +54,13 @@ jobs:
       
       - name: Commit, tag, and push
         if: steps.changes.outputs.changed == 'true'
+        id: push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
           # Get latest tag and bump patch version
-          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v0.0.0")
+          LATEST_TAG=$(git describe --tags --abbrev=0 2>/dev/null || echo "v1.0.0")
           echo "Latest tag: $LATEST_TAG"
           
           # Parse version (remove 'v' prefix if present)
@@ -79,11 +83,10 @@ jobs:
           git push origin "$NEW_TAG"
           
           echo "new_tag=$NEW_TAG" >> $GITHUB_OUTPUT
-        id: push
       
       - name: Create GitHub Release
         if: steps.changes.outputs.changed == 'true'
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.push.outputs.new_tag }}
           name: ${{ steps.push.outputs.new_tag }}
@@ -92,3 +95,5 @@ jobs:
             
             Source: [TryTryAgain/aws-iam-actions-list](https://github.com/TryTryAgain/aws-iam-actions-list)
           generate_release_notes: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
