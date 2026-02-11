@@ -11273,11 +11273,13 @@ output "actions" {
       CreateClusterV2 = "kafka:CreateClusterV2"
       CreateConfiguration = "kafka:CreateConfiguration"
       CreateReplicator = "kafka:CreateReplicator"
+      CreateTopic = "kafka:CreateTopic"
       CreateVpcConnection = "kafka:CreateVpcConnection"
       DeleteCluster = "kafka:DeleteCluster"
       DeleteClusterPolicy = "kafka:DeleteClusterPolicy"
       DeleteConfiguration = "kafka:DeleteConfiguration"
       DeleteReplicator = "kafka:DeleteReplicator"
+      DeleteTopic = "kafka:DeleteTopic"
       DeleteVpcConnection = "kafka:DeleteVpcConnection"
       DescribeCluster = "kafka:DescribeCluster"
       DescribeClusterOperation = "kafka:DescribeClusterOperation"
@@ -11323,6 +11325,7 @@ output "actions" {
       UpdateReplicationInfo = "kafka:UpdateReplicationInfo"
       UpdateSecurity = "kafka:UpdateSecurity"
       UpdateStorage = "kafka:UpdateStorage"
+      UpdateTopic = "kafka:UpdateTopic"
     }
     kafkaconnect = {
       AllActions = "kafkaconnect:*"
