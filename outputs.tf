@@ -10080,6 +10080,13 @@ output "actions" {
       AllActions = "inspector-scan:*"
       ScanSbom = "inspector-scan:ScanSbom"
     }
+    inspector2-telemetry = {
+      AllActions = "inspector2-telemetry:*"
+      NotifyHeartbeat = "inspector2-telemetry:NotifyHeartbeat"
+      SendTelemetry = "inspector2-telemetry:SendTelemetry"
+      StartSession = "inspector2-telemetry:StartSession"
+      StopSession = "inspector2-telemetry:StopSession"
+    }
     inspector2 = {
       AllActions = "inspector2:*"
       AssociateMember = "inspector2:AssociateMember"
