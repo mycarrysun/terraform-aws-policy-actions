@@ -14790,6 +14790,7 @@ output "actions" {
       EnableDefaultKeyReplicationRegions = "payment-cryptography:EnableDefaultKeyReplicationRegions"
       EncryptData = "payment-cryptography:EncryptData"
       ExportKey = "payment-cryptography:ExportKey"
+      GenerateAs2805KekValidation = "payment-cryptography:GenerateAs2805KekValidation"
       GenerateCardValidationData = "payment-cryptography:GenerateCardValidationData"
       GenerateMac = "payment-cryptography:GenerateMac"
       GenerateMacEmvPinChange = "payment-cryptography:GenerateMacEmvPinChange"
