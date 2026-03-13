@@ -14906,6 +14906,7 @@ output "actions" {
       UpdateOpportunity = "partnercentral:UpdateOpportunity"
       UpdateProgramManagementAccount = "partnercentral:UpdateProgramManagementAccount"
       UpdateRelationship = "partnercentral:UpdateRelationship"
+      UseSession = "partnercentral:UseSession"
     }
     payment-cryptography = {
       AllActions = "payment-cryptography:*"
