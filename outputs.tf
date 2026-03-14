@@ -16837,7 +16837,6 @@ output "actions" {
       DescribeCluster = "route53-recovery-control-config:DescribeCluster"
       DescribeControlPanel = "route53-recovery-control-config:DescribeControlPanel"
       DescribeRoutingControl = "route53-recovery-control-config:DescribeRoutingControl"
-      DescribeRoutingControlByName = "route53-recovery-control-config:DescribeRoutingControlByName"
       DescribeSafetyRule = "route53-recovery-control-config:DescribeSafetyRule"
       GetResourcePolicy = "route53-recovery-control-config:GetResourcePolicy"
       ListAssociatedRoute53HealthChecks = "route53-recovery-control-config:ListAssociatedRoute53HealthChecks"
@@ -18173,9 +18172,12 @@ output "actions" {
       DeleteDomain = "sdb:DeleteDomain"
       DomainMetadata = "sdb:DomainMetadata"
       GetAttributes = "sdb:GetAttributes"
+      GetExport = "sdb:GetExport"
       ListDomains = "sdb:ListDomains"
+      ListExports = "sdb:ListExports"
       PutAttributes = "sdb:PutAttributes"
       Select = "sdb:Select"
+      StartDomainExport = "sdb:StartDomainExport"
     }
     secretsmanager = {
       AllActions = "secretsmanager:*"
