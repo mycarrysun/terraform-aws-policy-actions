@@ -2054,6 +2054,7 @@ output "actions" {
       GetWorkloadAccessTokenForUserId = "bedrock-agentcore:GetWorkloadAccessTokenForUserId"
       GetWorkloadIdentity = "bedrock-agentcore:GetWorkloadIdentity"
       InvokeAgentRuntime = "bedrock-agentcore:InvokeAgentRuntime"
+      InvokeAgentRuntimeCommand = "bedrock-agentcore:InvokeAgentRuntimeCommand"
       InvokeAgentRuntimeForUser = "bedrock-agentcore:InvokeAgentRuntimeForUser"
       InvokeAgentRuntimeWithWebSocketStream = "bedrock-agentcore:InvokeAgentRuntimeWithWebSocketStream"
       InvokeAgentRuntimeWithWebSocketStreamForUser = "bedrock-agentcore:InvokeAgentRuntimeWithWebSocketStreamForUser"
@@ -8223,6 +8224,7 @@ output "actions" {
       GetCompatibleElasticsearchVersions = "es:GetCompatibleElasticsearchVersions"
       GetCompatibleVersions = "es:GetCompatibleVersions"
       GetDataSource = "es:GetDataSource"
+      GetDefaultApplicationSetting = "es:GetDefaultApplicationSetting"
       GetDirectQueryDataSource = "es:GetDirectQueryDataSource"
       GetDomainMaintenanceStatus = "es:GetDomainMaintenanceStatus"
       GetIndex = "es:GetIndex"
@@ -8248,6 +8250,7 @@ output "actions" {
       ListVpcEndpointsForDomain = "es:ListVpcEndpointsForDomain"
       PurchaseReservedElasticsearchInstanceOffering = "es:PurchaseReservedElasticsearchInstanceOffering"
       PurchaseReservedInstanceOffering = "es:PurchaseReservedInstanceOffering"
+      PutDefaultApplicationSetting = "es:PutDefaultApplicationSetting"
       RejectInboundConnection = "es:RejectInboundConnection"
       RejectInboundCrossClusterSearchConnection = "es:RejectInboundCrossClusterSearchConnection"
       RemoveTags = "es:RemoveTags"
@@ -10325,6 +10328,22 @@ output "actions" {
       SubscribeToEvent = "inspector:SubscribeToEvent"
       UnsubscribeFromEvent = "inspector:UnsubscribeFromEvent"
       UpdateAssessmentTarget = "inspector:UpdateAssessmentTarget"
+    }
+    interconnect = {
+      AllActions = "interconnect:*"
+      AcceptConnectionProposal = "interconnect:AcceptConnectionProposal"
+      CreateConnection = "interconnect:CreateConnection"
+      DeleteConnection = "interconnect:DeleteConnection"
+      DescribeConnectionProposal = "interconnect:DescribeConnectionProposal"
+      GetConnection = "interconnect:GetConnection"
+      GetEnvironment = "interconnect:GetEnvironment"
+      ListAttachPoints = "interconnect:ListAttachPoints"
+      ListConnections = "interconnect:ListConnections"
+      ListEnvironments = "interconnect:ListEnvironments"
+      ListTagsForResource = "interconnect:ListTagsForResource"
+      TagResource = "interconnect:TagResource"
+      UntagResource = "interconnect:UntagResource"
+      UpdateConnection = "interconnect:UpdateConnection"
     }
     internetmonitor = {
       AllActions = "internetmonitor:*"
@@ -20652,7 +20671,10 @@ output "actions" {
       AllActions = "uxc:*"
       DeleteAccountColor = "uxc:DeleteAccountColor"
       GetAccountColor = "uxc:GetAccountColor"
+      GetAccountCustomizations = "uxc:GetAccountCustomizations"
+      ListServices = "uxc:ListServices"
       PutAccountColor = "uxc:PutAccountColor"
+      UpdateAccountCustomizations = "uxc:UpdateAccountCustomizations"
     }
     vendor-insights = {
       AllActions = "vendor-insights:*"
