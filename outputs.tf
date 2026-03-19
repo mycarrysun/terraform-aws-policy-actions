@@ -18350,6 +18350,7 @@ output "actions" {
       AllActions = "securityhub:*"
       AcceptAdministratorInvitation = "securityhub:AcceptAdministratorInvitation"
       AcceptInvitation = "securityhub:AcceptInvitation"
+      AllowVendedLogDeliveryForResource = "securityhub:AllowVendedLogDeliveryForResource"
       BatchDeleteAutomationRules = "securityhub:BatchDeleteAutomationRules"
       BatchDisableStandards = "securityhub:BatchDisableStandards"
       BatchEnableStandards = "securityhub:BatchEnableStandards"
