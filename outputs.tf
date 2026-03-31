@@ -266,6 +266,7 @@ output "actions" {
       CreateBacklogTask = "aidevops:CreateBacklogTask"
       CreateChat = "aidevops:CreateChat"
       CreateKnowledgeItem = "aidevops:CreateKnowledgeItem"
+      CreateOneTimeLoginSession = "aidevops:CreateOneTimeLoginSession"
       DeleteAgentSpace = "aidevops:DeleteAgentSpace"
       DeleteKnowledgeItem = "aidevops:DeleteKnowledgeItem"
       DeregisterService = "aidevops:DeregisterService"
