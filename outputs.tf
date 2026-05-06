@@ -125,8 +125,10 @@ output "actions" {
       CreateAccessPreview = "access-analyzer:CreateAccessPreview"
       CreateAnalyzer = "access-analyzer:CreateAnalyzer"
       CreateArchiveRule = "access-analyzer:CreateArchiveRule"
+      CreateServiceLinkedAnalyzer = "access-analyzer:CreateServiceLinkedAnalyzer"
       DeleteAnalyzer = "access-analyzer:DeleteAnalyzer"
       DeleteArchiveRule = "access-analyzer:DeleteArchiveRule"
+      DeleteServiceLinkedAnalyzer = "access-analyzer:DeleteServiceLinkedAnalyzer"
       GenerateFindingRecommendation = "access-analyzer:GenerateFindingRecommendation"
       GetAccessPreview = "access-analyzer:GetAccessPreview"
       GetAnalyzedResource = "access-analyzer:GetAnalyzedResource"
@@ -292,6 +294,7 @@ output "actions" {
       DeletePrivateConnection = "aidevops:DeletePrivateConnection"
       DeregisterService = "aidevops:DeregisterService"
       DescribePrivateConnection = "aidevops:DescribePrivateConnection"
+      DescribeServices = "aidevops:DescribeServices"
       DescribeSupportLevel = "aidevops:DescribeSupportLevel"
       DisableOperatorApp = "aidevops:DisableOperatorApp"
       DisassociateService = "aidevops:DisassociateService"
@@ -1713,12 +1716,6 @@ output "actions" {
       UpdateAgreementApprovalRequest = "aws-marketplace:UpdateAgreementApprovalRequest"
       UpdatePurchaseOrders = "aws-marketplace:UpdatePurchaseOrders"
       ViewSubscriptions = "aws-marketplace:ViewSubscriptions"
-    }
-    aws-mcp = {
-      AllActions = "aws-mcp:*"
-      CallReadOnlyTool = "aws-mcp:CallReadOnlyTool"
-      CallReadWriteTool = "aws-mcp:CallReadWriteTool"
-      InvokeMcp = "aws-mcp:InvokeMcp"
     }
     aws-portal = {
       AllActions = "aws-portal:*"
@@ -16871,6 +16868,15 @@ output "actions" {
       UpdateChannel = "repostspace:UpdateChannel"
       UpdateSpace = "repostspace:UpdateSpace"
     }
+    researchstudio = {
+      AllActions = "researchstudio:*"
+      AssignPrincipal = "researchstudio:AssignPrincipal"
+      CreateApplication = "researchstudio:CreateApplication"
+      DeleteApplication = "researchstudio:DeleteApplication"
+      DeletePrincipal = "researchstudio:DeletePrincipal"
+      GetApplication = "researchstudio:GetApplication"
+      ListApplications = "researchstudio:ListApplications"
+    }
     resiliencehub = {
       AllActions = "resiliencehub:*"
       AcceptResourceGroupingRecommendations = "resiliencehub:AcceptResourceGroupingRecommendations"
@@ -21594,7 +21600,9 @@ output "actions" {
       ListMessageTemplateVersions = "wisdom:ListMessageTemplateVersions"
       ListMessageTemplates = "wisdom:ListMessageTemplates"
       ListMessages = "wisdom:ListMessages"
+      ListModels = "wisdom:ListModels"
       ListQuickResponses = "wisdom:ListQuickResponses"
+      ListSpans = "wisdom:ListSpans"
       ListTagsForResource = "wisdom:ListTagsForResource"
       NotifyRecommendationsReceived = "wisdom:NotifyRecommendationsReceived"
       PutFeedback = "wisdom:PutFeedback"
