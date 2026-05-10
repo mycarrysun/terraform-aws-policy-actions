@@ -1629,7 +1629,7 @@ output "actions" {
       ListBatchInferences = "aws-external-anthropic:ListBatchInferences"
       ListEnvironments = "aws-external-anthropic:ListEnvironments"
       ListFiles = "aws-external-anthropic:ListFiles"
-      ListMemoriesStore = "aws-external-anthropic:ListMemoriesStore"
+      ListMemoryStores = "aws-external-anthropic:ListMemoryStores"
       ListModels = "aws-external-anthropic:ListModels"
       ListSessions = "aws-external-anthropic:ListSessions"
       ListSkills = "aws-external-anthropic:ListSkills"
