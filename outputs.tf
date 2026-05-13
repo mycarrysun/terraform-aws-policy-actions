@@ -2620,6 +2620,7 @@ output "actions" {
       GetBillingView = "billing:GetBillingView"
       GetBillingViewData = "billing:GetBillingViewData"
       GetContractInformation = "billing:GetContractInformation"
+      GetCreditAllocationHistory = "billing:GetCreditAllocationHistory"
       GetCredits = "billing:GetCredits"
       GetIAMAccessPreference = "billing:GetIAMAccessPreference"
       GetResourcePolicy = "billing:GetResourcePolicy"
@@ -10488,6 +10489,7 @@ output "actions" {
       AllActions = "inspector2-telemetry:*"
       NotifyHeartbeat = "inspector2-telemetry:NotifyHeartbeat"
       SendTelemetry = "inspector2-telemetry:SendTelemetry"
+      SendTelemetryEvent = "inspector2-telemetry:SendTelemetryEvent"
       StartSession = "inspector2-telemetry:StartSession"
       StopSession = "inspector2-telemetry:StopSession"
     }
@@ -14633,6 +14635,7 @@ output "actions" {
     odb = {
       AllActions = "odb:*"
       AcceptMarketplaceRegistration = "odb:AcceptMarketplaceRegistration"
+      AssociateIamRoleToResource = "odb:AssociateIamRoleToResource"
       CreateCloudAutonomousVmCluster = "odb:CreateCloudAutonomousVmCluster"
       CreateCloudExadataInfrastructure = "odb:CreateCloudExadataInfrastructure"
       CreateCloudVmCluster = "odb:CreateCloudVmCluster"
@@ -14649,6 +14652,7 @@ output "actions" {
       DeleteOdbNetwork = "odb:DeleteOdbNetwork"
       DeleteOdbPeeringConnection = "odb:DeleteOdbPeeringConnection"
       DeleteResourcePolicy = "odb:DeleteResourcePolicy"
+      DisassociateIamRoleFromResource = "odb:DisassociateIamRoleFromResource"
       GetCloudAutonomousVmCluster = "odb:GetCloudAutonomousVmCluster"
       GetCloudExadataInfrastructure = "odb:GetCloudExadataInfrastructure"
       GetCloudExadataInfrastructureUnallocatedResources = "odb:GetCloudExadataInfrastructureUnallocatedResources"
