@@ -7279,6 +7279,7 @@
   "ecr:ValidatePullThroughCacheRule",
   "ecs-mcp:InvokeReadOnlyTools",
   "ecs-mcp:UseMcp",
+  "ecs:ContinueServiceDeployment",
   "ecs:CreateCapacityProvider",
   "ecs:CreateCluster",
   "ecs:CreateDaemon",

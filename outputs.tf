@@ -7726,6 +7726,7 @@ output "actions" {
     }
     ecs = {
       AllActions = "ecs:*"
+      ContinueServiceDeployment = "ecs:ContinueServiceDeployment"
       CreateCapacityProvider = "ecs:CreateCapacityProvider"
       CreateCluster = "ecs:CreateCluster"
       CreateDaemon = "ecs:CreateDaemon"
