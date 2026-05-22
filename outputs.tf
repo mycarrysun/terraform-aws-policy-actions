@@ -8661,6 +8661,7 @@ output "actions" {
       DeleteEnvironmentConnector = "evs:DeleteEnvironmentConnector"
       DeleteEnvironmentHost = "evs:DeleteEnvironmentHost"
       DisassociateEipFromVlan = "evs:DisassociateEipFromVlan"
+      GetDepotUrl = "evs:GetDepotUrl"
       GetEnvironment = "evs:GetEnvironment"
       GetVersions = "evs:GetVersions"
       ListEnvironmentConnectors = "evs:ListEnvironmentConnectors"
