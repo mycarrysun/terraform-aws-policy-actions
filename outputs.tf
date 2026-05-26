@@ -15486,6 +15486,7 @@ output "actions" {
       GetResourceMetrics = "pi:GetResourceMetrics"
       ListAvailableResourceDimensions = "pi:ListAvailableResourceDimensions"
       ListAvailableResourceMetrics = "pi:ListAvailableResourceMetrics"
+      ListPerformanceAnalysisReportRecommendations = "pi:ListPerformanceAnalysisReportRecommendations"
       ListPerformanceAnalysisReports = "pi:ListPerformanceAnalysisReports"
       ListTagsForResource = "pi:ListTagsForResource"
       TagResource = "pi:TagResource"
