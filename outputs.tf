@@ -5297,6 +5297,7 @@ output "actions" {
       SendIntegrationEvent = "connect:SendIntegrationEvent"
       SendOutboundChatMessage = "connect:SendOutboundChatMessage"
       SendOutboundEmail = "connect:SendOutboundEmail"
+      SendOutboundWebNotification = "connect:SendOutboundWebNotification"
       StartAttachedFileUpload = "connect:StartAttachedFileUpload"
       StartChatContact = "connect:StartChatContact"
       StartContactEvaluation = "connect:StartContactEvaluation"

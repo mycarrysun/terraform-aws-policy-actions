@@ -4958,6 +4958,7 @@
   "connect:SendIntegrationEvent",
   "connect:SendOutboundChatMessage",
   "connect:SendOutboundEmail",
+  "connect:SendOutboundWebNotification",
   "connect:StartAttachedFileUpload",
   "connect:StartChatContact",
   "connect:StartContactEvaluation",
