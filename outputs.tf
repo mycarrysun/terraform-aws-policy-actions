@@ -13839,6 +13839,7 @@ output "actions" {
       StartNetworkMigrationMapping = "mgn:StartNetworkMigrationMapping"
       StartNetworkMigrationMappingUpdate = "mgn:StartNetworkMigrationMappingUpdate"
       StartReplication = "mgn:StartReplication"
+      StartSnapshotGroupForMgn = "mgn:StartSnapshotGroupForMgn"
       StartTest = "mgn:StartTest"
       StopReplication = "mgn:StopReplication"
       TagResource = "mgn:TagResource"
