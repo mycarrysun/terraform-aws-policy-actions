@@ -21045,6 +21045,7 @@ output "actions" {
     }
     transform = {
       AllActions = "transform:*"
+      AccessTransformProfile = "transform:AccessTransformProfile"
       AssociateConnectorResource = "transform:AssociateConnectorResource"
       CreateProfile = "transform:CreateProfile"
       DeleteAgentRuntimeConfiguration = "transform:DeleteAgentRuntimeConfiguration"
