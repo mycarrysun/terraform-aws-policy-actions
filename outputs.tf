@@ -1623,6 +1623,7 @@ output "actions" {
       CreateUserProfile = "aws-external-anthropic:CreateUserProfile"
       CreateUserProfileEnrollmentUrl = "aws-external-anthropic:CreateUserProfileEnrollmentUrl"
       CreateVault = "aws-external-anthropic:CreateVault"
+      CreateWebhook = "aws-external-anthropic:CreateWebhook"
       CreateWorkspace = "aws-external-anthropic:CreateWorkspace"
       DeleteBatchInference = "aws-external-anthropic:DeleteBatchInference"
       DeleteEnvironment = "aws-external-anthropic:DeleteEnvironment"
@@ -1631,6 +1632,7 @@ output "actions" {
       DeleteSession = "aws-external-anthropic:DeleteSession"
       DeleteSkill = "aws-external-anthropic:DeleteSkill"
       DeleteVault = "aws-external-anthropic:DeleteVault"
+      DeleteWebhook = "aws-external-anthropic:DeleteWebhook"
       GetAccountStatus = "aws-external-anthropic:GetAccountStatus"
       GetAgent = "aws-external-anthropic:GetAgent"
       GetBatchInference = "aws-external-anthropic:GetBatchInference"
@@ -1642,6 +1644,7 @@ output "actions" {
       GetSkill = "aws-external-anthropic:GetSkill"
       GetUserProfile = "aws-external-anthropic:GetUserProfile"
       GetVault = "aws-external-anthropic:GetVault"
+      GetWebhook = "aws-external-anthropic:GetWebhook"
       GetWorkspace = "aws-external-anthropic:GetWorkspace"
       ListAgents = "aws-external-anthropic:ListAgents"
       ListBatchInferences = "aws-external-anthropic:ListBatchInferences"
@@ -1654,7 +1657,10 @@ output "actions" {
       ListTagsForResource = "aws-external-anthropic:ListTagsForResource"
       ListUserProfiles = "aws-external-anthropic:ListUserProfiles"
       ListVaults = "aws-external-anthropic:ListVaults"
+      ListWebhooks = "aws-external-anthropic:ListWebhooks"
       ListWorkspaces = "aws-external-anthropic:ListWorkspaces"
+      ProcessEnvironmentWork = "aws-external-anthropic:ProcessEnvironmentWork"
+      RotateWebhookSecret = "aws-external-anthropic:RotateWebhookSecret"
       TagResource = "aws-external-anthropic:TagResource"
       UntagResource = "aws-external-anthropic:UntagResource"
       UpdateAgent = "aws-external-anthropic:UpdateAgent"
@@ -1664,6 +1670,7 @@ output "actions" {
       UpdateSkill = "aws-external-anthropic:UpdateSkill"
       UpdateUserProfile = "aws-external-anthropic:UpdateUserProfile"
       UpdateVault = "aws-external-anthropic:UpdateVault"
+      UpdateWebhook = "aws-external-anthropic:UpdateWebhook"
       UpdateWorkspace = "aws-external-anthropic:UpdateWorkspace"
     }
     aws-marketplace-management = {
@@ -10239,6 +10246,7 @@ output "actions" {
       SubmitPreAuthClaim = "healthlake:SubmitPreAuthClaim"
       TagResource = "healthlake:TagResource"
       UntagResource = "healthlake:UntagResource"
+      UpdateFHIRDatastore = "healthlake:UpdateFHIRDatastore"
       UpdateResource = "healthlake:UpdateResource"
       ValidateResource = "healthlake:ValidateResource"
       VersionReadResource = "healthlake:VersionReadResource"
@@ -17898,6 +17906,7 @@ output "actions" {
     s3 = {
       AllActions = "s3:*"
       AbortMultipartUpload = "s3:AbortMultipartUpload"
+      AllowVendedLogDeliveryForResource = "s3:AllowVendedLogDeliveryForResource"
       AssociateAccessGrantsIdentityCenter = "s3:AssociateAccessGrantsIdentityCenter"
       BypassGovernanceRetention = "s3:BypassGovernanceRetention"
       CreateAccessGrant = "s3:CreateAccessGrant"
@@ -19670,10 +19679,19 @@ output "actions" {
     }
     signin = {
       AllActions = "signin:*"
+      Authenticate = "signin:Authenticate"
       AuthorizeOAuth2Access = "signin:AuthorizeOAuth2Access"
+      CreateAccount = "signin:CreateAccount"
       CreateOAuth2Token = "signin:CreateOAuth2Token"
       CreateTrustedIdentityPropagationApplicationForConsole = "signin:CreateTrustedIdentityPropagationApplicationForConsole"
+      DeleteConsoleAuthorizationConfiguration = "signin:DeleteConsoleAuthorizationConfiguration"
+      DeleteResourcePermissionStatement = "signin:DeleteResourcePermissionStatement"
+      GetConsoleAuthorizationConfiguration = "signin:GetConsoleAuthorizationConfiguration"
+      GetResourcePolicy = "signin:GetResourcePolicy"
+      ListResourcePermissionStatements = "signin:ListResourcePermissionStatements"
       ListTrustedIdentityPropagationApplicationsForConsole = "signin:ListTrustedIdentityPropagationApplicationsForConsole"
+      PutConsoleAuthorizationConfiguration = "signin:PutConsoleAuthorizationConfiguration"
+      PutResourcePermissionStatement = "signin:PutResourcePermissionStatement"
     }
     simspaceweaver = {
       AllActions = "simspaceweaver:*"
