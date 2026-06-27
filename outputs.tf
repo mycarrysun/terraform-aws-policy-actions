@@ -21520,11 +21520,21 @@ output "actions" {
     user-subscriptions = {
       AllActions = "user-subscriptions:*"
       CreateClaim = "user-subscriptions:CreateClaim"
+      CreateClaimAddOn = "user-subscriptions:CreateClaimAddOn"
+      DeleteAutoTopUpRule = "user-subscriptions:DeleteAutoTopUpRule"
       DeleteClaim = "user-subscriptions:DeleteClaim"
+      GetAutoTopUpRule = "user-subscriptions:GetAutoTopUpRule"
+      GetEffectiveUsageLimit = "user-subscriptions:GetEffectiveUsageLimit"
+      GetUsageLimitHistory = "user-subscriptions:GetUsageLimitHistory"
       ListApplicationClaims = "user-subscriptions:ListApplicationClaims"
+      ListClaimAddOns = "user-subscriptions:ListClaimAddOns"
       ListClaims = "user-subscriptions:ListClaims"
+      ListEntitlements = "user-subscriptions:ListEntitlements"
+      ListUsageLimits = "user-subscriptions:ListUsageLimits"
       ListUserSubscriptions = "user-subscriptions:ListUserSubscriptions"
+      SetAutoTopUpRule = "user-subscriptions:SetAutoTopUpRule"
       SetOverageConfig = "user-subscriptions:SetOverageConfig"
+      SetUsageLimit = "user-subscriptions:SetUsageLimit"
       UpdateClaim = "user-subscriptions:UpdateClaim"
     }
     uxc = {
