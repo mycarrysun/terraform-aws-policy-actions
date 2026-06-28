@@ -353,6 +353,7 @@ output "actions" {
       TagResource = "aidevops:TagResource"
       UntagResource = "aidevops:UntagResource"
       UpdateAgentSpace = "aidevops:UpdateAgentSpace"
+      UpdateApprovalAction = "aidevops:UpdateApprovalAction"
       UpdateAsset = "aidevops:UpdateAsset"
       UpdateAssetFile = "aidevops:UpdateAssetFile"
       UpdateAssociation = "aidevops:UpdateAssociation"
