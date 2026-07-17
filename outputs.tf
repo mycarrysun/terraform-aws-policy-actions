@@ -21101,6 +21101,8 @@ output "actions" {
       GetCarbonFootprintSummary = "sustainability:GetCarbonFootprintSummary"
       GetEstimatedCarbonEmissions = "sustainability:GetEstimatedCarbonEmissions"
       GetEstimatedCarbonEmissionsDimensionValues = "sustainability:GetEstimatedCarbonEmissionsDimensionValues"
+      GetEstimatedWaterAllocation = "sustainability:GetEstimatedWaterAllocation"
+      GetEstimatedWaterAllocationDimensionValues = "sustainability:GetEstimatedWaterAllocationDimensionValues"
     }
     swf = {
       AllActions = "swf:*"

@@ -19859,6 +19859,8 @@
   "sustainability:GetCarbonFootprintSummary",
   "sustainability:GetEstimatedCarbonEmissions",
   "sustainability:GetEstimatedCarbonEmissionsDimensionValues",
+  "sustainability:GetEstimatedWaterAllocation",
+  "sustainability:GetEstimatedWaterAllocationDimensionValues",
   "swf:CancelTimer",
   "swf:CancelWorkflowExecution",
   "swf:CompleteWorkflowExecution",
