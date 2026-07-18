@@ -4719,6 +4719,7 @@ output "actions" {
       AdminForgetDevice = "cognito-idp:AdminForgetDevice"
       AdminGetDevice = "cognito-idp:AdminGetDevice"
       AdminGetUser = "cognito-idp:AdminGetUser"
+      AdminGetUserAuthFactors = "cognito-idp:AdminGetUserAuthFactors"
       AdminInitiateAuth = "cognito-idp:AdminInitiateAuth"
       AdminLinkProviderForUser = "cognito-idp:AdminLinkProviderForUser"
       AdminListDevices = "cognito-idp:AdminListDevices"
