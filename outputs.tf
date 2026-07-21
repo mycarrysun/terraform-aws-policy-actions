@@ -10942,11 +10942,13 @@ output "actions" {
       ListTagsForResource = "invoicing:ListTagsForResource"
       PutInvoiceEmailDeliveryPreferences = "invoicing:PutInvoiceEmailDeliveryPreferences"
       PutProcurementPortalPreference = "invoicing:PutProcurementPortalPreference"
+      SendProcurementPortalValidation = "invoicing:SendProcurementPortalValidation"
       StartInvoiceCorrection = "invoicing:StartInvoiceCorrection"
       TagResource = "invoicing:TagResource"
       UntagResource = "invoicing:UntagResource"
       UpdateInvoiceUnit = "invoicing:UpdateInvoiceUnit"
       UpdateProcurementPortalPreferenceStatus = "invoicing:UpdateProcurementPortalPreferenceStatus"
+      VerifyProcurementPortalValidation = "invoicing:VerifyProcurementPortalValidation"
     }
     iot-device-tester = {
       AllActions = "iot-device-tester:*"
@@ -21091,11 +21093,19 @@ output "actions" {
     }
     supportplans = {
       AllActions = "supportplans:*"
+      AcceptSupportAgreement = "supportplans:AcceptSupportAgreement"
+      CancelSupportAgreement = "supportplans:CancelSupportAgreement"
+      CreateSupportAgreement = "supportplans:CreateSupportAgreement"
       CreateSupportPlanSchedule = "supportplans:CreateSupportPlanSchedule"
+      GetSupportAgreement = "supportplans:GetSupportAgreement"
       GetSupportPlan = "supportplans:GetSupportPlan"
       GetSupportPlanUpdateStatus = "supportplans:GetSupportPlanUpdateStatus"
+      ListSupportAgreementRevisions = "supportplans:ListSupportAgreementRevisions"
+      ListSupportAgreements = "supportplans:ListSupportAgreements"
       ListSupportPlanModifiers = "supportplans:ListSupportPlanModifiers"
+      RejectSupportAgreement = "supportplans:RejectSupportAgreement"
       StartSupportPlanUpdate = "supportplans:StartSupportPlanUpdate"
+      UpdateSupportAgreement = "supportplans:UpdateSupportAgreement"
     }
     sustainability = {
       AllActions = "sustainability:*"
