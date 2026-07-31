@@ -2359,6 +2359,7 @@ output "actions" {
       ListGatewayTargets = "bedrock-agentcore:ListGatewayTargets"
       ListGateways = "bedrock-agentcore:ListGateways"
       ListHarnessEndpoints = "bedrock-agentcore:ListHarnessEndpoints"
+      ListHarnessVersions = "bedrock-agentcore:ListHarnessVersions"
       ListHarnesses = "bedrock-agentcore:ListHarnesses"
       ListMemories = "bedrock-agentcore:ListMemories"
       ListMemoryExtractionJobs = "bedrock-agentcore:ListMemoryExtractionJobs"
@@ -6474,6 +6475,7 @@ output "actions" {
       DescribeVirtualInterfaces = "directconnect:DescribeVirtualInterfaces"
       DisassociateConnectionFromLag = "directconnect:DisassociateConnectionFromLag"
       DisassociateMacSecKey = "directconnect:DisassociateMacSecKey"
+      ListVirtualInterfaceRoutes = "directconnect:ListVirtualInterfaceRoutes"
       ListVirtualInterfaceTestHistory = "directconnect:ListVirtualInterfaceTestHistory"
       StartBgpFailoverTest = "directconnect:StartBgpFailoverTest"
       StopBgpFailoverTest = "directconnect:StopBgpFailoverTest"
@@ -10967,6 +10969,8 @@ output "actions" {
       ListInvoiceSummaries = "invoicing:ListInvoiceSummaries"
       ListInvoiceUnits = "invoicing:ListInvoiceUnits"
       ListProcurementPortalPreferences = "invoicing:ListProcurementPortalPreferences"
+      ListProcurementPortalSuppliers = "invoicing:ListProcurementPortalSuppliers"
+      ListProcurementPortals = "invoicing:ListProcurementPortals"
       ListTagsForResource = "invoicing:ListTagsForResource"
       PutInvoiceEmailDeliveryPreferences = "invoicing:PutInvoiceEmailDeliveryPreferences"
       PutProcurementPortalPreference = "invoicing:PutProcurementPortalPreference"
@@ -15971,6 +15975,7 @@ output "actions" {
     }
     pricingplanmanager = {
       AllActions = "pricingplanmanager:*"
+      ApprovePaidSubscription = "pricingplanmanager:ApprovePaidSubscription"
       AssociateResourcesToSubscription = "pricingplanmanager:AssociateResourcesToSubscription"
       CancelSubscription = "pricingplanmanager:CancelSubscription"
       CancelSubscriptionChange = "pricingplanmanager:CancelSubscriptionChange"
