@@ -155,6 +155,20 @@ output "actions" {
       UpdateFindings = "access-analyzer:UpdateFindings"
       ValidatePolicy = "access-analyzer:ValidatePolicy"
     }
+    account-access = {
+      AllActions = "account-access:*"
+      CreateApplication = "account-access:CreateApplication"
+      CreateEntitlement = "account-access:CreateEntitlement"
+      DeleteApplication = "account-access:DeleteApplication"
+      DeleteEntitlement = "account-access:DeleteEntitlement"
+      GetApplication = "account-access:GetApplication"
+      GetEntitlement = "account-access:GetEntitlement"
+      ListApplications = "account-access:ListApplications"
+      ListEntitlements = "account-access:ListEntitlements"
+      ListTagsForResource = "account-access:ListTagsForResource"
+      TagResource = "account-access:TagResource"
+      UntagResource = "account-access:UntagResource"
+    }
     account = {
       AllActions = "account:*"
       AcceptPrimaryEmailUpdate = "account:AcceptPrimaryEmailUpdate"
