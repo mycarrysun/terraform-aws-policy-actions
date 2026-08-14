@@ -239,6 +239,7 @@ output "actions" {
       ListAcmeDomainValidations = "acm:ListAcmeDomainValidations"
       ListAcmeEndpoints = "acm:ListAcmeEndpoints"
       ListAcmeExternalAccountBindings = "acm:ListAcmeExternalAccountBindings"
+      ListCertificateDomainValidations = "acm:ListCertificateDomainValidations"
       ListCertificates = "acm:ListCertificates"
       ListTagsForCertificate = "acm:ListTagsForCertificate"
       ListTagsForResource = "acm:ListTagsForResource"
