@@ -2511,6 +2511,7 @@ output "actions" {
       CallWithBearerToken = "bedrock-mantle:CallWithBearerToken"
       CancelFineTuningJob = "bedrock-mantle:CancelFineTuningJob"
       CancelInference = "bedrock-mantle:CancelInference"
+      CountTokens = "bedrock-mantle:CountTokens"
       CreateCustomizedModel = "bedrock-mantle:CreateCustomizedModel"
       CreateFile = "bedrock-mantle:CreateFile"
       CreateFineTuningJob = "bedrock-mantle:CreateFineTuningJob"
