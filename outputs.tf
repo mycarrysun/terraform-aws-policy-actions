@@ -15928,6 +15928,7 @@ output "actions" {
       EncryptData = "payment-cryptography:EncryptData"
       ExportKey = "payment-cryptography:ExportKey"
       GenerateAs2805KekValidation = "payment-cryptography:GenerateAs2805KekValidation"
+      GenerateAuthRequestCryptogram = "payment-cryptography:GenerateAuthRequestCryptogram"
       GenerateCardValidationData = "payment-cryptography:GenerateCardValidationData"
       GenerateMac = "payment-cryptography:GenerateMac"
       GenerateMacEmvPinChange = "payment-cryptography:GenerateMacEmvPinChange"
