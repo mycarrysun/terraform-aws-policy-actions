@@ -10568,6 +10568,7 @@ output "actions" {
       DescribeDataTransformationJob = "healthlake:DescribeDataTransformationJob"
       DescribeFHIRBulkDeleteJob = "healthlake:DescribeFHIRBulkDeleteJob"
       DescribeFHIRBulkMemberMatchJob = "healthlake:DescribeFHIRBulkMemberMatchJob"
+      DescribeFHIRBulkPatchJob = "healthlake:DescribeFHIRBulkPatchJob"
       DescribeFHIRDatastore = "healthlake:DescribeFHIRDatastore"
       DescribeFHIRExportJob = "healthlake:DescribeFHIRExportJob"
       DescribeFHIRExportJobWithGet = "healthlake:DescribeFHIRExportJobWithGet"
@@ -10606,6 +10607,7 @@ output "actions" {
       StartDataTransformationJob = "healthlake:StartDataTransformationJob"
       StartFHIRBulkDeleteJob = "healthlake:StartFHIRBulkDeleteJob"
       StartFHIRBulkMemberMatchJob = "healthlake:StartFHIRBulkMemberMatchJob"
+      StartFHIRBulkPatchJob = "healthlake:StartFHIRBulkPatchJob"
       StartFHIRExportJob = "healthlake:StartFHIRExportJob"
       StartFHIRExportJobWithGet = "healthlake:StartFHIRExportJobWithGet"
       StartFHIRExportJobWithPost = "healthlake:StartFHIRExportJobWithPost"
@@ -15134,6 +15136,7 @@ output "actions" {
     }
     notifications = {
       AllActions = "notifications:*"
+      AccessSensitiveEvents = "notifications:AccessSensitiveEvents"
       AssociateChannel = "notifications:AssociateChannel"
       AssociateManagedNotificationAccountContact = "notifications:AssociateManagedNotificationAccountContact"
       AssociateManagedNotificationAdditionalChannel = "notifications:AssociateManagedNotificationAdditionalChannel"
@@ -15171,9 +15174,11 @@ output "actions" {
       ListTagsForResource = "notifications:ListTagsForResource"
       PutFeatureOptInStatus = "notifications:PutFeatureOptInStatus"
       RegisterNotificationHub = "notifications:RegisterNotificationHub"
+      SubscribeSensitiveEvents = "notifications:SubscribeSensitiveEvents"
       TagResource = "notifications:TagResource"
       UntagResource = "notifications:UntagResource"
       UpdateEventRule = "notifications:UpdateEventRule"
+      UpdateManagedNotificationChannelAssociation = "notifications:UpdateManagedNotificationChannelAssociation"
       UpdateNotificationConfiguration = "notifications:UpdateNotificationConfiguration"
     }
     nova-act = {
