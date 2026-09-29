@@ -1412,6 +1412,7 @@ output "actions" {
       ListPlansInRegion = "arc-region-switch:ListPlansInRegion"
       ListRoute53HealthChecks = "arc-region-switch:ListRoute53HealthChecks"
       ListRoute53HealthChecksInRegion = "arc-region-switch:ListRoute53HealthChecksInRegion"
+      ListServiceQuotaWarnings = "arc-region-switch:ListServiceQuotaWarnings"
       ListTagsForResource = "arc-region-switch:ListTagsForResource"
       PutResourcePolicy = "arc-region-switch:PutResourcePolicy"
       StartPlanExecution = "arc-region-switch:StartPlanExecution"
@@ -20799,6 +20800,7 @@ output "actions" {
     social-messaging = {
       AllActions = "social-messaging:*"
       AssociateWhatsAppBusinessAccount = "social-messaging:AssociateWhatsAppBusinessAccount"
+      CreateWhatsAppDataset = "social-messaging:CreateWhatsAppDataset"
       CreateWhatsAppFlow = "social-messaging:CreateWhatsAppFlow"
       CreateWhatsAppMessageTemplate = "social-messaging:CreateWhatsAppMessageTemplate"
       CreateWhatsAppMessageTemplateFromLibrary = "social-messaging:CreateWhatsAppMessageTemplateFromLibrary"
@@ -20810,6 +20812,7 @@ output "actions" {
       DisassociateWhatsAppBusinessAccount = "social-messaging:DisassociateWhatsAppBusinessAccount"
       GetLinkedWhatsAppBusinessAccount = "social-messaging:GetLinkedWhatsAppBusinessAccount"
       GetLinkedWhatsAppBusinessAccountPhoneNumber = "social-messaging:GetLinkedWhatsAppBusinessAccountPhoneNumber"
+      GetWhatsAppBusinessPublicKey = "social-messaging:GetWhatsAppBusinessPublicKey"
       GetWhatsAppCallPermission = "social-messaging:GetWhatsAppCallPermission"
       GetWhatsAppFlow = "social-messaging:GetWhatsAppFlow"
       GetWhatsAppFlowPreview = "social-messaging:GetWhatsAppFlowPreview"
@@ -20824,7 +20827,9 @@ output "actions" {
       PostWhatsAppMessageMedia = "social-messaging:PostWhatsAppMessageMedia"
       PublishWhatsAppFlow = "social-messaging:PublishWhatsAppFlow"
       PutWhatsAppBusinessAccountEventDestinations = "social-messaging:PutWhatsAppBusinessAccountEventDestinations"
+      PutWhatsAppBusinessPublicKey = "social-messaging:PutWhatsAppBusinessPublicKey"
       SendWhatsAppCallEvent = "social-messaging:SendWhatsAppCallEvent"
+      SendWhatsAppConversionEvent = "social-messaging:SendWhatsAppConversionEvent"
       SendWhatsAppMessage = "social-messaging:SendWhatsAppMessage"
       TagResource = "social-messaging:TagResource"
       UntagResource = "social-messaging:UntagResource"
@@ -21443,6 +21448,10 @@ output "actions" {
       UpdateSSOConfiguration = "sso:UpdateSSOConfiguration"
       UpdateTrust = "sso:UpdateTrust"
       UpdateTrustedTokenIssuer = "sso:UpdateTrustedTokenIssuer"
+    }
+    startups = {
+      AllActions = "startups:*"
+      GetSpendSummary = "startups:GetSpendSummary"
     }
     states = {
       AllActions = "states:*"
