@@ -187,7 +187,9 @@ output "actions" {
       PutAccountName = "account:PutAccountName"
       PutAlternateContact = "account:PutAlternateContact"
       PutContactInformation = "account:PutContactInformation"
+      SendPhoneNumberVerification = "account:SendPhoneNumberVerification"
       StartPrimaryEmailUpdate = "account:StartPrimaryEmailUpdate"
+      VerifyPhoneNumber = "account:VerifyPhoneNumber"
     }
     acm-pca = {
       AllActions = "acm-pca:*"
@@ -18897,11 +18899,13 @@ output "actions" {
       ListTagsForResource = "s3vectors:ListTagsForResource"
       ListVectorBuckets = "s3vectors:ListVectorBuckets"
       ListVectors = "s3vectors:ListVectors"
+      PutVectorBucketDefaultIndexMode = "s3vectors:PutVectorBucketDefaultIndexMode"
       PutVectorBucketPolicy = "s3vectors:PutVectorBucketPolicy"
       PutVectors = "s3vectors:PutVectors"
       QueryVectors = "s3vectors:QueryVectors"
       TagResource = "s3vectors:TagResource"
       UntagResource = "s3vectors:UntagResource"
+      UpdateIndexMode = "s3vectors:UpdateIndexMode"
     }
     sagemaker-data-science-assistant = {
       AllActions = "sagemaker-data-science-assistant:*"
