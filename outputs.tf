@@ -22128,6 +22128,7 @@ output "actions" {
       DescribeWebApp = "transfer:DescribeWebApp"
       DescribeWebAppCustomization = "transfer:DescribeWebAppCustomization"
       DescribeWorkflow = "transfer:DescribeWorkflow"
+      ExportHostKey = "transfer:ExportHostKey"
       ImportCertificate = "transfer:ImportCertificate"
       ImportHostKey = "transfer:ImportHostKey"
       ImportSshPublicKey = "transfer:ImportSshPublicKey"
