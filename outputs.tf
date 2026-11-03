@@ -16606,10 +16606,13 @@ output "actions" {
       GetSpeechSynthesisTask = "polly:GetSpeechSynthesisTask"
       ListLexicons = "polly:ListLexicons"
       ListSpeechSynthesisTasks = "polly:ListSpeechSynthesisTasks"
+      ListTagsForResource = "polly:ListTagsForResource"
       PutLexicon = "polly:PutLexicon"
       StartSpeechSynthesisStream = "polly:StartSpeechSynthesisStream"
       StartSpeechSynthesisTask = "polly:StartSpeechSynthesisTask"
       SynthesizeSpeech = "polly:SynthesizeSpeech"
+      TagResource = "polly:TagResource"
+      UntagResource = "polly:UntagResource"
     }
     pricing = {
       AllActions = "pricing:*"
