@@ -18520,6 +18520,7 @@ output "actions" {
       ListSavedQueries = "redshift:ListSavedQueries"
       ListSchemas = "redshift:ListSchemas"
       ListTables = "redshift:ListTables"
+      ModifyAccountAttributes = "redshift:ModifyAccountAttributes"
       ModifyAquaConfiguration = "redshift:ModifyAquaConfiguration"
       ModifyAuthenticationProfile = "redshift:ModifyAuthenticationProfile"
       ModifyAutonomicsDenylist = "redshift:ModifyAutonomicsDenylist"
